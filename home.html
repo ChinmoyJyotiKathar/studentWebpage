@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME-PAGE</title>
+<style>
+	
+ div.BRAND{
+
+ 	background-color: lightgray; 
+    color:darkgreen;
+    padding: 2px 280px;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 4px 4px 4px 4px;
+
+ }
+
+ #MENU {
+
+ 	border: 3px solid indigo;
+ 	padding: 3px;
+ 	background-color: green;
+ 
+
+ }
+ 
+
+ ul#head_MENU li{
+   font-size: 120%;
+   color:white;
+   padding: 5px 5px;
+   background-color: darkgreen;
+   display:inline;
+   border-radius: 4px 4px 4px 4px;
+   margin: 12px;
+ }
+
+ a:visited {color:white; 
+	background-color:green; 
+	text-decoration:none}
+
+
+ a:link  
+  { 
+  	padding: 6px 6px;
+    color:white;
+    background-color: green;
+    text-decoration: none; 
+    border-radius: 4px 4px 4px 4px;
+
+   
+} 
+a:active  
+{  
+   
+    padding: 6px 6px;
+	color:white; 
+	background-color:#004d00; 
+	text-decoration:none;
+}
+  	
+  a:hover   
+  {
+
+   padding: 6px 6px;
+   color: green;
+   background-color: white;
+   text-decoration: none;
+   
+   
+} 
+
+
+#footer {
+
+	color: blue;
+	background-color: lightgray;
+	font-size: 80%;
+	text-align: center;
+	margin-top: 10px;
+	font-family: Courier;
+}
+
+
+</style>
+
+</head>
+<body>
+  
+  <div class="BRAND">
+  	 
+  	 <h2><sup style="font-size:35%;"><i>A Place To</i></sup> :: ANN'MARKET ::<sub style="font-size:35%;"><i>Buy and Sell</i></sub></h2>
+
+
+  </div>
+
+  <div id="MENU">
+  	<ul id="head_MENU" style="list-style-type: none;"">
+  		
+  		<li id="home_button" onclick="change_content()"><a href="#">HOME </a></li>
+  		
+  		<li id="BUY_button" onclick="change_content1()"><a href="#">BUY</a></li>
+  		
+  		<li id="SELL_button" onclick="change_content2()"><a href="#" >SELL</a></li>
+  		
+  		<li id="eBOOK_button" onclick="change_content3()"><a href="#">e-Book</a></li>
+       
+       <li id="CycleRent_button" onclick="change_content4()"><a href="#">Cab-share</a></li>
+       
+       <li id="Search_button" onclick="change_content5()"><a href="#">Cycle Rent</a></li>
+        <form style="display:inline; margin-left:150px; "><li ><input type="text" name="search"; placeholder="Search.."; background-image : url('search_icon.png'); ></li></form>
+
+  	</ul>
+
+  </div>
+  <br> 
+
+  <div id="content" style="width :400px height: 400px;"> 
+   '<object type="text/html" data="assignment.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';
+  </div>
+  
+ <script type="text/javascript">
+ 	function change_content(){
+
+ 		document.getElementById("content").innerHTML='<object type="text/html" data="blink.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';
+
+ 		
+ 	}
+ 	function change_content1(){
+
+ 		document.getElementById("content").innerHTML='<object type="text/html" data="productlistholder.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';   
+ 	}
+ 	function change_content2(){
+
+ 		document.getElementById("content").innerHTML='<object type="text/html" data="sellpage.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';  
+ 	}
+ 	function change_content3(){
+
+ 		document.getElementById("content").innerHTML='<object type="text/html" data="assignment.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';   
+ 	}
+ 	function change_content4(){
+
+ 		document.getElementById("content").innerHTML='<object type="text/html" data="blink.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';   
+ 	}
+ 	function change_content5(){
+
+ 		document.getElementById("content").innerHTML='<object type="text/html" data="blink.html" style="margin-left : 220px; width : 800px; height: 450px;" ></object>';   
+ 	}
+  
+
+ </script> 
+  	
+     
+<div id="footer">
+
+  <p>  Customer Care : 8486729812 </p>
+	
+</div>
+
+</body>
+</html>
+
+

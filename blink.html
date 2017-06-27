@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 0.75s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: yellow;}
+    to {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: gray;}
+    to {background-color: lightgray;}
+}
+</style>
+</head>
+<body>
+
+<p>Gradually change the background-color from red, to blue:<p>
+<div id="myDIV"> <p>hello</p></div>
+
+<p>The background-position property is <em>animatable</em> in CSS.</p>
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+
+
+</html>
